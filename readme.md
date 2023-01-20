@@ -10,6 +10,10 @@
 ## Description
 
 _This webpage transfroms the number given by user to the phrase following rules._
+* _For numbers that contain a 1, all digits are replaced with "Beep!"_
+* _For numbers that contain a 2, all digits are replaced with "Boop!"_
+* _For numbers that contain a 3, all digits are replaced with "Won't you be my neighbor?"_
+
 
 ## Setup/Installation Requirements
 
@@ -53,3 +57,21 @@ Code:
 const number = 5;
 beepboop(number);
 Expected Output: 1, 2, "Won't you be my neighbor?", 4, 5
+
+Test: "If number contains 2, replace it with "Boop!"."
+Code:
+const number = 5;
+beepboop(number);
+Expected Output: 1, "Boop!, "Won't you be my neighbor?", 4, 5
+
+Test: "If number contains 1 replace it with "Beep!"."
+Code:
+const number = 5;
+beepboop(number);
+Expected Output: "Beep!", "Boop!, "Won't you be my neighbor?", 4, 5
+
+Test: "Make sure the following hierarchy of symbols followed: 3 over 2 over 1."
+Code:
+const number = 5;
+beepboop(number);
+Expected Output: "Beep!", "Boop!, "Won't you be my neighbor?", 4, 5

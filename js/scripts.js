@@ -1,11 +1,4 @@
 //Business Logic
-function contains3(element) {
-  if ((element + "").indexOf("3") > -1) {
-    element = "Won't you be my neighbor?";
-    return element;
-  }
-}
-
 function beepboop(number) {
   if(number < 1) {
     const paragraph = document.createElement("p");
@@ -15,11 +8,14 @@ function beepboop(number) {
   else {
     let newArray = [];
     let i = number;
+    //create new Array with all preceding numbers
     while (i > 0) {
       newArray.push(number - i);
       i --;
     }
     newArray.push(number);
+
+    //check for elements of an array containing numbers 1,2,3 and replacing with appropriate phrases
     newArray.forEach(function(element) {
       if ((element + "").indexOf("3") > -1) {
         let index = newArray.indexOf(element);
