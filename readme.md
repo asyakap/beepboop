@@ -18,6 +18,7 @@ _This webpage transfroms the number given by user to the phrase following rules.
 ## Setup/Installation Requirements
 
 * _You need a web browser_
+* _From your browser open the following link: https://asyakap.github.io/beepboop/_
 
 
 ## Known Bugs
