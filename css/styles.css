@@ -9,3 +9,8 @@ form {
 h2 {
   padding: 20px;
 }
+
+footer {
+  font-size: 12px;
+  font-style: italic;
+}
