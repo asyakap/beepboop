@@ -25,7 +25,16 @@ function beepboop(number) {
         let index = newArray.indexOf(element);
         newArray[index] = "Won't you be my neighbor?";
       }
+      else if ((element + "").indexOf("2") > -1) {
+        let index = newArray.indexOf(element);
+        newArray[index] = "Boop!";
+      }
+      else if ((element + "").indexOf("1") > -1) {
+        let index = newArray.indexOf(element);
+        newArray[index] = "Beep!";
+      }
     });
+
     const paragraph = document.createElement("p");
     paragraph.append(newArray);
     document.body.append(paragraph);
