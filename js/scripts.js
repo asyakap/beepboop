@@ -19,21 +19,22 @@ function beepboop(number) {
     newArray.forEach(function(element) {
       if ((element + "").indexOf("3") > -1) {
         let index = newArray.indexOf(element);
-        newArray[index] = "Won't you be my neighbor?";
+        newArray[index] = " Won't you be my neighbor?";
       }
       else if ((element + "").indexOf("2") > -1) {
         let index = newArray.indexOf(element);
-        newArray[index] = "Boop!";
+        newArray[index] = " Boop!";
       }
       else if ((element + "").indexOf("1") > -1) {
         let index = newArray.indexOf(element);
-        newArray[index] = "Beep!";
+        newArray[index] = " Beep!";
+      }
+      else {
+        let index = newArray.indexOf(element);
+        newArray[index] = " " + element;
       }
     });
-
-    const paragraph = document.createElement("p");
-    paragraph.append(newArray);
-    document.body.append(paragraph);
+    document.getElementById("output").innerText = newArray;
   }
 }
 
