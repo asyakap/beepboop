@@ -1,4 +1,11 @@
 //Business Logic
+function contains3(element) {
+  if ((element + "").indexOf("3") > -1) {
+    element = "Won't you be my neighbor?";
+    return element;
+  }
+}
+
 function beepboop(number) {
   if(number < 1) {
     const paragraph = document.createElement("p");
@@ -13,6 +20,12 @@ function beepboop(number) {
       i --;
     }
     newArray.push(number);
+    newArray.forEach(function(element) {
+      if ((element + "").indexOf("3") > -1) {
+        let index = newArray.indexOf(element);
+        newArray[index] = "Won't you be my neighbor?";
+      }
+    });
     const paragraph = document.createElement("p");
     paragraph.append(newArray);
     document.body.append(paragraph);

@@ -46,4 +46,10 @@ Test: "It should return all numbers preceding to the number."
 Code:
 const number = 5;
 beepboop(number);
-Expected Output: 1, 2, 3, 4, 5.
+Expected Output: 1, 2, 3, 4, 5
+
+Test: "If number contains 3, replace it with "Won't you be my neighbor?"."
+Code:
+const number = 5;
+beepboop(number);
+Expected Output: 1, 2, "Won't you be my neighbor?", 4, 5
