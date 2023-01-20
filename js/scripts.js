@@ -1,6 +1,6 @@
 //Business Logic
 function beepboop(number) {
-  if(number < 1) {
+  if (number < 1) {
     const paragraph = document.createElement("p");
     paragraph.append("Please enter integer number > 0");
     document.body.append(paragraph);
@@ -11,12 +11,12 @@ function beepboop(number) {
     //create new Array with all preceding numbers
     while (i > 0) {
       newArray.push(number - i);
-      i --;
+      i--;
     }
     newArray.push(number);
 
     //check for elements of an array containing numbers 1,2,3 and replacing with appropriate phrases
-    newArray.forEach(function(element) {
+    newArray.forEach(function (element) {
       if ((element + "").indexOf("3") > -1) {
         let index = newArray.indexOf(element);
         newArray[index] = " Won't you be my neighbor?";
