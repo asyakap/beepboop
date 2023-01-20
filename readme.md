@@ -1,4 +1,3 @@
-# Text analyzer
 #### Mr. Roboger's Neighborhood
 
 ## Technologies Used
