@@ -1,5 +1,4 @@
 # Mr. Roboger's Neighborhood
-#### Mr. Roboger's Neighborhood
 
 ## Technologies Used
 
@@ -9,7 +8,7 @@
 
 ## Description
 
-_This webpage transfroms the number given by user to the phrase following rules._
+_This webpage transfroms the number given by user to the phrase following rules. It displays all the numbers from 0 to the given number and:_
 * _For numbers that contain a 1, all digits are replaced with "Beep!"_
 * _For numbers that contain a 2, all digits are replaced with "Boop!"_
 * _For numbers that contain a 3, all digits are replaced with "Won't you be my neighbor?"_
