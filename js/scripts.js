@@ -1,5 +1,5 @@
 //Business Logic
-function beepboop(number) {
+function beepboop(number, name) {
   if (number < 1) {
     const paragraph = document.createElement("p");
     paragraph.append("Please enter integer number > 0");
@@ -19,7 +19,7 @@ function beepboop(number) {
     newArray.forEach(function (element) {
       if ((element + "").indexOf("3") > -1) {
         let index = newArray.indexOf(element);
-        newArray[index] = " Won't you be my neighbor?";
+        newArray[index] = " Won't you be my neighbor, " + name + "?";
       }
       else if ((element + "").indexOf("2") > -1) {
         let index = newArray.indexOf(element);
@@ -44,6 +44,7 @@ window.onload = function () {
   form.onsubmit = function (event) {
     event.preventDefault();
     let input = document.getElementById("input").value;
-    beepboop(input);
+    let name = document.getElementById("name").value;
+    beepboop(input, name);
   }
 }
