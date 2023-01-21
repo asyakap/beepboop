@@ -75,3 +75,17 @@ Code:
 const number = 5;
 beepboop(number);
 Expected Output: "Beep!", "Boop!, "Won't you be my neighbor?", 4, 5
+
+Test: "If user gives her name, add it to "Won't you be my neighbor?"."
+Code:
+const number = 5;
+const name = Asia;
+beepboop(number, name);
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor, Asia ?, 4, 5
+
+Test: "Submit Reverse button follows the same rules but print the array in reverse order."
+Code:
+const number = 5;
+const name = Asia;
+beepboop(number, name);
+Expected Output: 5, 4, Won't you be my neighbor, Asia ?, Boop!, Beep!, 0

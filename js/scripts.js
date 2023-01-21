@@ -34,7 +34,7 @@ function beepboop(number, name) {
         newArray[index] = " " + element;
       }
     });
-    document.getElementById("output").innerText = newArray;
+    return newArray;
   }
 }
 
@@ -44,7 +44,16 @@ window.onload = function () {
   form.onsubmit = function (event) {
     event.preventDefault();
     let input = document.getElementById("input").value;
-    let name = document.getElementById("name").value;
-    beepboop(input, name);
-  }
+    let name = document.getElementById("name").value;  
+    let newArray = beepboop(input, name);
+    document.getElementById("output").innerText = newArray;
+    }
+    document.getElementById("btn").onclick = function() {
+      event.preventDefault();
+      let input = document.getElementById("input").value;
+      let name = document.getElementById("name").value;
+      let newArray = beepboop(input, name);
+      beepboop(input, name);
+      document.getElementById("output").innerText = newArray.reverse();
+    }
 }
