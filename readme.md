@@ -83,7 +83,7 @@ const name = Asia;
 beepboop(number, name);
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor, Asia ?, 4, 5
 
-Test: "Submit Reverse button follows the same rules but print the array in reverse order."
+Test: "Submit Reverse button follows the same rules but prints the array in reverse order."
 Code:
 const number = 5;
 const name = Asia;

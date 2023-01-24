@@ -1,5 +1,6 @@
 //Business Logic
 function beepboop(number, name) {
+  console.log(number);
   if (number < 1) {
     const paragraph = document.createElement("p");
     paragraph.append("Please enter integer number > 0");
